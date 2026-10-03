@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.DocumentRevisions-V100
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# 에디터
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Office 임시 파일
+~$*
+
+# 환경 변수
+.env
+.env.*
+
+# 로컬 전용 문서
+작동법.md
