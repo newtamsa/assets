@@ -278,7 +278,7 @@ div:where(.swal2-container) .swal2-html-container {
         margin-bottom: 0.5rem;
     }
 }
-#navbarNavDropdown, .navbar-absolute-top-scroller {
+#navbarNavDropdown, .nt-navbar-menu {
     background-color: transparent !important;
 }
 div:where(.swal2-container) .swal2-select {
@@ -467,7 +467,7 @@ a .card-title {
 .tagWrap span:nth-child(1) {
     margin-left: 0 !important;
 }
-.news-avatar-circle {
+.news-photo-round {
     width: 5.125rem;
     height: 5.125rem;
 }
@@ -570,13 +570,13 @@ a .card-title {
 .news-related-list-side .list-group-item .small {
     font-size: .8rem;
 }
-.symbol {
+.nt-score {
     display: inline-block;
     flex-shrink: 0;
     position: relative;
     border-radius: 0.475rem;
 }
-.symbol .symbol-label {
+.nt-score .nt-score-label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -717,7 +717,7 @@ a .card-title {
 .bubble-chat-wrap [data-length="0"] {
     display: none;
 }
-.divider-start.border-primary::after,
+.nt-rule-left.border-primary::after,
 .divider-end.border-primary::before {
     border-top: .0625rem solid var(--bs-blue);
 }
@@ -793,7 +793,7 @@ a .card-title {
 [data-bs-theme="dark"] #header.navbar,
 [data-bs-theme="dark"] .navbar-light { background-color: var(--nt-bg); }
 [data-bs-theme="dark"] .navbar.navbar-scrolled,
-[data-bs-theme="dark"] .navbar-absolute-top-scroller,
+[data-bs-theme="dark"] .nt-navbar-menu,
 [data-bs-theme="dark"] #navbarNavDropdown { background-color: var(--nt-bg); }
 [data-bs-theme="dark"] .navbar-nav .nav-link { color: var(--nt-text); }
 [data-bs-theme="dark"] .navbar-nav .nav-link:focus,
@@ -803,29 +803,26 @@ a .card-title {
 [data-bs-theme="dark"] .newsNav ul.nav li a { color: var(--nt-muted); }
 [data-bs-theme="dark"] .newsNav ul.nav li a.active,
 [data-bs-theme="dark"] .newsNav ul.nav li a:hover { color: var(--nt-heading); }
-[data-bs-theme="dark"] .hs-nav-scroller-arrow-link {
-    color: var(--nt-text); background-color: var(--nt-bg); background-image: none;
-}
 
-[data-bs-theme="dark"] .btn-ghost-secondary { color: var(--nt-muted); }
-[data-bs-theme="dark"] .btn-ghost-secondary:hover,
-[data-bs-theme="dark"] .btn-ghost-secondary:focus { color: var(--nt-primary); background-color: var(--nt-primary-soft); }
-[data-bs-theme="dark"] .btn-soft-secondary { color: var(--nt-text); background-color: var(--nt-elev-2); border-color: transparent; }
-[data-bs-theme="dark"] .btn-soft-secondary:hover { color: var(--nt-heading); background-color: #2e3340; }
-[data-bs-theme="dark"] .btn-soft-primary { color: var(--nt-primary); background-color: var(--nt-primary-soft); }
-[data-bs-theme="dark"] .btn-soft-success { color: var(--nt-success); background-color: var(--nt-success-soft); }
-[data-bs-theme="dark"] .btn-soft-info { color: var(--nt-info); background-color: var(--nt-info-soft); }
-[data-bs-theme="dark"] .btn-soft-danger { color: var(--nt-danger); background-color: var(--nt-danger-soft); }
-[data-bs-theme="dark"] .btn-soft-dark { color: var(--nt-text); background-color: var(--nt-elev-2); }
+[data-bs-theme="dark"] .nt-btn-ghost { color: var(--nt-muted); }
+[data-bs-theme="dark"] .nt-btn-ghost:hover,
+[data-bs-theme="dark"] .nt-btn-ghost:focus { color: var(--nt-primary); background-color: var(--nt-primary-soft); }
+[data-bs-theme="dark"] .nt-btn-tint-secondary { color: var(--nt-text); background-color: var(--nt-elev-2); border-color: transparent; }
+[data-bs-theme="dark"] .nt-btn-tint-secondary:hover { color: var(--nt-heading); background-color: #2e3340; }
+[data-bs-theme="dark"] .nt-btn-tint-primary { color: var(--nt-primary); background-color: var(--nt-primary-soft); }
+[data-bs-theme="dark"] .nt-btn-tint-success { color: var(--nt-success); background-color: var(--nt-success-soft); }
+[data-bs-theme="dark"] .nt-btn-tint-info { color: var(--nt-info); background-color: var(--nt-info-soft); }
+[data-bs-theme="dark"] .nt-btn-tint-danger { color: var(--nt-danger); background-color: var(--nt-danger-soft); }
+[data-bs-theme="dark"] .nt-btn-tint-dark { color: var(--nt-text); background-color: var(--nt-elev-2); }
 [data-bs-theme="dark"] .btn-link { color: var(--nt-text); }
 [data-bs-theme="dark"] .btn-link:hover { color: var(--nt-primary); }
 [data-bs-theme="dark"] .btn-link.text-dark { color: var(--nt-heading) !important; }
 [data-bs-theme="dark"] .btn-secondary { color: #fff; background-color: #47535f; border-color: #47535f; }
 [data-bs-theme="dark"] .btn-secondary:hover { background-color: #53606e; border-color: #53606e; }
-[data-bs-theme="dark"] .btn-white {
+[data-bs-theme="dark"] .nt-btn-plain {
     color: var(--nt-text); background-color: var(--nt-elev); border-color: var(--nt-border);
 }
-[data-bs-theme="dark"] .btn-white:hover { background-color: var(--nt-elev-2); }
+[data-bs-theme="dark"] .nt-btn-plain:hover { background-color: var(--nt-elev-2); }
 [data-bs-theme="dark"] .btn-close {
     filter: invert(1) grayscale(1) brightness(1.8);
 }
@@ -905,7 +902,7 @@ a .card-title {
 [data-bs-theme="dark"] .news-related-list-side a h5 { color: var(--nt-text); }
 [data-bs-theme="dark"] .news-newest-list-side a,
 [data-bs-theme="dark"] .news-related-list-side a { border-bottom-color: var(--nt-border); }
-[data-bs-theme="dark"] .input-card { background-color: inherit; box-shadow: none; }
+[data-bs-theme="dark"] .nt-searchbox { background-color: inherit; box-shadow: none; }
 [data-bs-theme="dark"] .policyPlainText { background-color: var(--nt-inset); color: var(--nt-text); }
 [data-bs-theme="dark"] .policyWrap h1, [data-bs-theme="dark"] .policyWrap h2,
 [data-bs-theme="dark"] .policyWrap h3, [data-bs-theme="dark"] .policyWrap h4 { color: var(--nt-heading); }
@@ -938,7 +935,7 @@ a .card-title {
 }
 [data-bs-theme="dark"] .color-first { color: #4fb6ea; }
 [data-bs-theme="dark"] .color-second { color: #6a9fe0; }
-[data-bs-theme="dark"] .symbol .symbol-label { color: var(--nt-success); background-color: var(--nt-success-soft); }
+[data-bs-theme="dark"] .nt-score .nt-score-label { color: var(--nt-success); background-color: var(--nt-success-soft); }
 [data-bs-theme="dark"] #contentWrap blockquote div,
 [data-bs-theme="dark"] #contentWrap blockquote div.cite {
     background-color: var(--nt-elev) !important; color: var(--nt-text) !important;
@@ -1072,7 +1069,7 @@ a .card-title {
     }
 }
 
-[data-bs-theme="dark"] .bg-img-start {
+[data-bs-theme="dark"] .nt-band-top {
     background-color: var(--nt-bg);
     background-image: linear-gradient(125.9deg, transparent 0 63%, rgba(255, 255, 255, .035) 63%), radial-gradient(ellipse 62% 95% at 59% 72%, var(--nt-elev-2) 0%, var(--nt-bg) 100%) !important;
     background-size: cover;
